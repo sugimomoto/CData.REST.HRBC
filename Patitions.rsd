@@ -1,7 +1,7 @@
 <api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from XML. -->
-  <api:info title="xml" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+  <api:info title="Patitions" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
     <!-- You can modify the name, type, and column size here.   -->
     <attr name="Code"                       xs:type="integer" readonly="false"              other:xPath="/Partition/Code"                       />
     <attr name="CompanyId" xs:type="string"  readonly="false"              other:xPath="/Partition/Item/Partition.P_CompanyId" />

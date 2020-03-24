@@ -1,20 +1,20 @@
 <api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from XML. -->
-  <api:info title="Item" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+  <api:info title="Jobs" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
     <!-- You can modify the name, type, and column size here.   -->
     <attr name="Area_Tokyo_Option_Id"                  xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Area/Option.P_Tokyo/Option.P_Id"                                                />
     <attr name="Area_Tokyo_Option_Name"                xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Area/Option.P_Tokyo/Option.P_Name"                                              />
     <attr name="AreaSummary"                                      xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_AreaSummary"                                                                    />
-    <attr name="Benefits"                                         xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_Benefits"                                                                       />
-    <attr name="CapitalText"                                      xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_CapitalText"                                                                    />
+    <attr name="Benefits"                                         xs:type="string"  readonly="false"              other:xPath="/Job/Item/Job.P_Benefits"                                                                       />
+    <attr name="CapitalText"                                      xs:type="string"  readonly="false"              other:xPath="/Job/Item/Job.P_CapitalText"                                                                    />
     <attr name="Client_Id"                        xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Client/Client/Client.P_Id"                                                      />
     <attr name="Deleted"                                          xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Deleted"                                                                        />
-    <attr name="EmploymentPeriod"                                 xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_EmploymentPeriod"                                                               />
-    <attr name="EmploymentType"                                   xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_EmploymentType"                                                                 />
-    <attr name="EstablishmentDateText"                            xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_EstablishmentDateText"                                                          />
-    <attr name="ExpectedAgeReason"                                xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_ExpectedAgeReason"                                                              />
-    <attr name="Holidays"                                         xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_Holidays"                                                                       />
+    <attr name="EmploymentPeriod"                                 xs:type="string"  readonly="false"              other:xPath="/Job/Item/Job.P_EmploymentPeriod"                                                               />
+    <attr name="EmploymentType"                                   xs:type="string"  readonly="false"              other:xPath="/Job/Item/Job.P_EmploymentType"                                                                 />
+    <attr name="EstablishmentDateText"                            xs:type="string"  readonly="false"              other:xPath="/Job/Item/Job.P_EstablishmentDateText"                                                          />
+    <attr name="ExpectedAgeReason"                                xs:type="string"  readonly="false"              other:xPath="/Job/Item/Job.P_ExpectedAgeReason"                                                              />
+    <attr name="Holidays"                                         xs:type="string"  readonly="false"              other:xPath="/Job/Item/Job.P_Holidays"                                                                       />
     <attr name="Id"                                               xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Id"                                                                             />
     <attr name="Industry_Industry1_Option_Id"          xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Industry/Option.P_Industry1/Option.P_Id"                                        />
     <attr name="Industry_Industry1_Option_Name"        xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Industry/Option.P_Industry1/Option.P_Name"                                      />
@@ -60,17 +60,17 @@
     <attr name="PhaseDate"                                        xs:type="datetime" readonly="false"              other:xPath="/Job/Item/Job.P_PhaseDate"                                                                      />
     <attr name="PhaseMemo"                                        xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_PhaseMemo"                                                                      />
     <attr name="Position"                                         xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Position"                                                                       />
-    <attr name="PubliclyTraded"                                   xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_PubliclyTraded"                                                                 />
+    <attr name="PubliclyTraded"                                   xs:type="string"  readonly="false"              other:xPath="/Job/Item/Job.P_PubliclyTraded"                                                                 />
     <attr name="Publish_RealName_Option_Id"            xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Publish/Option.P_RealName/Option.P_Id"                                          />
     <attr name="Publish_RealName_Option_Name"          xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Publish/Option.P_RealName/Option.P_Name"                                        />
     <attr name="Recruiter"                                        xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Recruiter"                                        other:valueFormat="aggregate" />
     <attr name="RegisteredBy_User_Id"                      xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_RegisteredBy/User/User.P_Id"                                                    />
     <attr name="RegistrationDate"                                 xs:type="datetime" readonly="false"              other:xPath="/Job/Item/Job.P_RegistrationDate"                                                               />
     <attr name="SalarySummary"                                    xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_SalarySummary"                                                                  />
-    <attr name="SalesAmountText"                                  xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_SalesAmountText"                                                                />
+    <attr name="SalesAmountText"                                  xs:type="string"  readonly="false"              other:xPath="/Job/Item/Job.P_SalesAmountText"                                                                />
     <attr name="UpdateDate"                                       xs:type="datetime" readonly="false"              other:xPath="/Job/Item/Job.P_UpdateDate"                                                                     />
     <attr name="UpdatedBy_User_Id"                         xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_UpdatedBy/User/User.P_Id"                                                       />
-    <attr name="WokingHours"                                      xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_WokingHours"                                                                    />
+    <attr name="WokingHours"                                      xs:type="string"  readonly="false"              other:xPath="/Job/Item/Job.P_WokingHours"                                                                    />
   </api:info>
 
 

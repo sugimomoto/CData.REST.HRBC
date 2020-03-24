@@ -1,28 +1,28 @@
 <api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from XML. -->
-  <api:info title="Item" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+  <api:info title="Sales" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
     <!-- You can modify the name, type, and column size here.   -->
-    <attr name="BillingCity"                        xs:type="unknown"  readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingCity"                        />
+    <attr name="BillingCity"                        xs:type="string"  readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingCity"                        />
     <attr name="BillingClient"                      xs:type="string"   readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingClient"                      />
-    <attr name="BillingCountry"                     xs:type="unknown"  readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingCountry"                     />
+    <attr name="BillingCountry"                     xs:type="string"  readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingCountry"                     />
     <attr name="BillingDivision"                    xs:type="string"   readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingDivision"                    />
     <attr name="BillingName"                        xs:type="string"   readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingName"                        />
-    <attr name="BillingPrefecture"                  xs:type="unknown"  readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingPrefecture"                  />
+    <attr name="BillingPrefecture"                  xs:type="string"  readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingPrefecture"                  />
     <attr name="BillingStreet"                      xs:type="string"   readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingStreet"                      />
     <attr name="BillingTitle"                       xs:type="string"   readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingTitle"                       />
     <attr name="BillingZipcode"                     xs:type="string"   readonly="false"              other:xPath="/Sales/Item/Sales.P_BillingZipcode"                     />
     <attr name="Candidate_Person_Id"    xs:type="integer"  readonly="false"              other:xPath="/Sales/Item/Sales.P_Candidate/Candidate/Person.P_Id"    />
     <attr name="Client_Id"          xs:type="integer"  readonly="false"              other:xPath="/Sales/Item/Sales.P_Client/Client/Client.P_Id"          />
-    <attr name="Contract"                           xs:type="unknown"  readonly="false"              other:xPath="/Sales/Item/Sales.P_Contract"                           />
+    <attr name="Contract"                           xs:type="string"  readonly="false"              other:xPath="/Sales/Item/Sales.P_Contract"                           />
     <attr name="Deleted"                            xs:type="integer"  readonly="false"              other:xPath="/Sales/Item/Sales.P_Deleted"                            />
     <attr name="EnterDate"                          xs:type="date"     readonly="false"              other:xPath="/Sales/Item/Sales.P_EnterDate"                          />
     <attr name="Id"                                 xs:type="integer"  readonly="false"              other:xPath="/Sales/Item/Sales.P_Id"                                 />
     <attr name="Job_Id"                   xs:type="integer"  readonly="false"              other:xPath="/Sales/Item/Sales.P_Job/Job/Job.P_Id"                   />
     <attr name="Owner_User_Id"               xs:type="integer"  readonly="false"              other:xPath="/Sales/Item/Sales.P_Owner/User/User.P_Id"               />
-    <attr name="Phase"                              xs:type="unknown"  readonly="false"              other:xPath="/Sales/Item/Sales.P_Phase"                              />
-    <attr name="PhaseDate"                          xs:type="unknown"  readonly="false"              other:xPath="/Sales/Item/Sales.P_PhaseDate"                          />
-    <attr name="PhaseMemo"                          xs:type="unknown"  readonly="false"              other:xPath="/Sales/Item/Sales.P_PhaseMemo"                          />
+    <attr name="Phase"                              xs:type="string"  readonly="false"              other:xPath="/Sales/Item/Sales.P_Phase"                              />
+    <attr name="PhaseDate"                          xs:type="string"  readonly="false"              other:xPath="/Sales/Item/Sales.P_PhaseDate"                          />
+    <attr name="PhaseMemo"                          xs:type="string"  readonly="false"              other:xPath="/Sales/Item/Sales.P_PhaseMemo"                          />
     <attr name="RecordDate"                         xs:type="date"     readonly="false"              other:xPath="/Sales/Item/Sales.P_RecordDate"                         />
     <attr name="Recruiter_Recruiter_Id" xs:type="integer"  readonly="false"              other:xPath="/Sales/Item/Sales.P_Recruiter/Recruiter/Recruiter.P_Id" />
     <attr name="RegisteredBy_User_Id"        xs:type="integer"  readonly="false"              other:xPath="/Sales/Item/Sales.P_RegisteredBy/User/User.P_Id"        />

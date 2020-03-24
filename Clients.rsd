@@ -1,10 +1,10 @@
 <api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from XML. -->
-  <api:info title="Item" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+  <api:info title="Clients" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
     <!-- You can modify the name, type, and column size here.   -->
-    <attr name="City"                                              xs:type="unknown"  readonly="false"              other:xPath="/Client/Item/Client.P_City"                                              />
-    <attr name="Country"                                           xs:type="unknown"  readonly="false"              other:xPath="/Client/Item/Client.P_Country"                                           />
+    <attr name="City"                                              xs:type="string"  readonly="false"              other:xPath="/Client/Item/Client.P_City"                                              />
+    <attr name="Country"                                           xs:type="string"  readonly="false"              other:xPath="/Client/Item/Client.P_Country"                                           />
     <attr name="Deleted"                                           xs:type="integer"  readonly="false"              other:xPath="/Client/Item/Client.P_Deleted"                                           />
     <attr name="Fax"                                               xs:type="string"   readonly="false"              other:xPath="/Client/Item/Client.P_Fax"                                               />
     <attr name="Id"                                                xs:type="integer"  readonly="false"              other:xPath="/Client/Item/Client.P_Id"                                                />
@@ -17,7 +17,7 @@
     <attr name="Phase_Option_ClientSuccessForSale_Name" xs:type="string"   readonly="false"              other:xPath="/Client/Item/Client.P_Phase/Option.P_ClientSuccessForSale/Option.P_Name" />
     <attr name="PhaseDate"                                         xs:type="datetime" readonly="false"              other:xPath="/Client/Item/Client.P_PhaseDate"                                         />
     <attr name="PhaseMemo"                                         xs:type="string"   readonly="false"              other:xPath="/Client/Item/Client.P_PhaseMemo"                                         />
-    <attr name="Prefecture"                                        xs:type="unknown"  readonly="false"              other:xPath="/Client/Item/Client.P_Prefecture"                                        />
+    <attr name="Prefecture"                                        xs:type="string"  readonly="false"              other:xPath="/Client/Item/Client.P_Prefecture"                                        />
     <attr name="RegisteredBy_User_Id"                       xs:type="integer"  readonly="false"              other:xPath="/Client/Item/Client.P_RegisteredBy/User/User.P_Id"                       />
     <attr name="RegistrationDate"                                  xs:type="datetime" readonly="false"              other:xPath="/Client/Item/Client.P_RegistrationDate"                                  />
     <attr name="Street"                                            xs:type="string"   readonly="false"              other:xPath="/Client/Item/Client.P_Street"                                            />

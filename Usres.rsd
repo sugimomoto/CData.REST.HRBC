@@ -1,7 +1,7 @@
 <api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from XML. -->
-  <api:info title="Item" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+  <api:info title="Usres" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
     <!-- You can modify the name, type, and column size here.   -->
     <attr name="Department_Id"   xs:type="integer"  readonly="false"              other:xPath="/User/Item/User.P_Department/Department/Department.P_Id"   />
     <attr name="Department_Name" xs:type="string"   readonly="false"              other:xPath="/User/Item/User.P_Department/Department/Department.P_Name" />

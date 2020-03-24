@@ -1,7 +1,7 @@
 <api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from XML. -->
-  <api:info title="Item" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+  <api:info title="Resumes" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
     <!-- You can modify the name, type, and column size here.   -->
     <attr name="Candidate_Person_Id"                             xs:type="integer"  readonly="false"              other:xPath="/Resume/Item/Resume.P_Candidate/Candidate/Person.P_Id"                             />
     <attr name="CarrierSummary"                                              xs:type="string"   readonly="false"              other:xPath="/Resume/Item/Resume.P_CarrierSummary"                                              />
@@ -11,7 +11,7 @@
     <attr name="CurrentStatus_Working_Option_Name"                xs:type="string"   readonly="false"              other:xPath="/Resume/Item/Resume.P_CurrentStatus/Option.P_Working/Option.P_Name"                />
     <attr name="DateOfBirth"                                                 xs:type="date"     readonly="false"              other:xPath="/Resume/Item/Resume.P_DateOfBirth"                                                 />
     <attr name="Deleted"                                                     xs:type="integer"  readonly="false"              other:xPath="/Resume/Item/Resume.P_Deleted"                                                     />
-    <attr name="DesiredHourlyRate"                                           xs:type="unknown"  readonly="false"              other:xPath="/Resume/Item/Resume.P_DesiredHourlyRate"                                           />
+    <attr name="DesiredHourlyRate"                                           xs:type="string"  readonly="false"              other:xPath="/Resume/Item/Resume.P_DesiredHourlyRate"                                           />
     <attr name="Education"                                                   xs:type="string"   readonly="false"              other:xPath="/Resume/Item/Resume.P_Education"                                                   />
     <attr name="ExpectArea_Chiba_Option_Id"                       xs:type="integer"  readonly="false"              other:xPath="/Resume/Item/Resume.P_ExpectArea/Option.P_Chiba/Option.P_Id"                       />
     <attr name="ExpectArea_Chiba_Option_Name"                     xs:type="string"   readonly="false"              other:xPath="/Resume/Item/Resume.P_ExpectArea/Option.P_Chiba/Option.P_Name"                     />
@@ -97,7 +97,7 @@
     <attr name="ExperiencedJobCategory_JobCategory26_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Resume/Item/Resume.P_ExperiencedJobCategory/Option.P_JobCategory26/Option.P_Name" />
     <attr name="Gender_Male_Option_Id"                            xs:type="integer"  readonly="false"              other:xPath="/Resume/Item/Resume.P_Gender/Option.P_Male/Option.P_Id"                            />
     <attr name="Gender_Male_Option_Name"                          xs:type="string"   readonly="false"              other:xPath="/Resume/Item/Resume.P_Gender/Option.P_Male/Option.P_Name"                          />
-    <attr name="HourlyRate"                                                  xs:type="unknown"  readonly="false"              other:xPath="/Resume/Item/Resume.P_HourlyRate"                                                  />
+    <attr name="HourlyRate"                                                  xs:type="string"  readonly="false"              other:xPath="/Resume/Item/Resume.P_HourlyRate"                                                  />
     <attr name="Id"                                                          xs:type="integer"  readonly="false"              other:xPath="/Resume/Item/Resume.P_Id"                                                          />
     <attr name="Memo"                                                        xs:type="string"   readonly="false"              other:xPath="/Resume/Item/Resume.P_Memo"                                                        />
     <attr name="Name"                                                        xs:type="string"   readonly="false"              other:xPath="/Resume/Item/Resume.P_Name"                                                        />

@@ -3,10 +3,10 @@
   <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from XML. -->
   <api:info title="Candidate" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
     <!-- You can modify the name, type, and column size here.   -->
-    <attr name="City"                        xs:type="unknown"  readonly="false"              other:xPath="/Candidate/Item/Person.P_City"                        />
-    <attr name="Country"                     xs:type="unknown"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Country"                     />
+    <attr name="City"                        xs:type="string"  readonly="false"              other:xPath="/Candidate/Item/Person.P_City"                        />
+    <attr name="Country"                     xs:type="string"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Country"                     />
     <attr name="Deleted"                     xs:type="integer"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Deleted"                     />
-    <attr name="Fax"                         xs:type="unknown"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Fax"                         />
+    <attr name="Fax"                         xs:type="string"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Fax"                         />
     <attr name="Id"                          xs:type="integer"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Id"                          />
     <attr name="Mail"                        xs:type="string"   readonly="false"              other:xPath="/Candidate/Item/Person.P_Mail"                        />
     <attr name="Memo"                        xs:type="string"   readonly="false"              other:xPath="/Candidate/Item/Person.P_Memo"                        />
@@ -14,11 +14,11 @@
     <attr name="MobileMail"                  xs:type="string"   readonly="false"              other:xPath="/Candidate/Item/Person.P_MobileMail"                  />
     <attr name="Name"                        xs:type="string"   readonly="false"              other:xPath="/Candidate/Item/Person.P_Name"                        />
     <attr name="Owner_User_Id"        xs:type="integer"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Owner/User/User.P_Id"        />
-    <attr name="Phase"                       xs:type="unknown"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Phase"                       />
-    <attr name="PhaseDate"                   xs:type="unknown"  readonly="false"              other:xPath="/Candidate/Item/Person.P_PhaseDate"                   />
-    <attr name="PhaseMemo"                   xs:type="unknown"  readonly="false"              other:xPath="/Candidate/Item/Person.P_PhaseMemo"                   />
-    <attr name="Prefecture"                  xs:type="unknown"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Prefecture"                  />
-    <attr name="Reading"                     xs:type="unknown"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Reading"                     />
+    <attr name="Phase"                       xs:type="string"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Phase"                       />
+    <attr name="PhaseDate"                   xs:type="string"  readonly="false"              other:xPath="/Candidate/Item/Person.P_PhaseDate"                   />
+    <attr name="PhaseMemo"                   xs:type="string"  readonly="false"              other:xPath="/Candidate/Item/Person.P_PhaseMemo"                   />
+    <attr name="Prefecture"                  xs:type="string"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Prefecture"                  />
+    <attr name="Reading"                     xs:type="string"  readonly="false"              other:xPath="/Candidate/Item/Person.P_Reading"                     />
     <attr name="RegisteredBy_User_Id" xs:type="integer"  readonly="false"              other:xPath="/Candidate/Item/Person.P_RegisteredBy/User/User.P_Id" />
     <attr name="RegistrationDate"            xs:type="datetime" readonly="false"              other:xPath="/Candidate/Item/Person.P_RegistrationDate"            />
     <attr name="Street"                      xs:type="string"   readonly="false"              other:xPath="/Candidate/Item/Person.P_Street"                      />

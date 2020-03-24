@@ -1,9 +1,9 @@
 <api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
   <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from XML. -->
-  <api:info title="Item" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+  <api:info title="Processes" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
     <!-- You can modify the name, type, and column size here.   -->
-    <attr name="Candidate_Person_Fax"               xs:type="unknown"  readonly="false"              other:xPath="/Process/Item/Process.P_Candidate/Candidate/Person.P_Fax"               />
+    <attr name="Candidate_Person_Fax"               xs:type="string"  readonly="false"              other:xPath="/Process/Item/Process.P_Candidate/Candidate/Person.P_Fax"               />
     <attr name="Candidate_Person_Mail"              xs:type="string"   readonly="false"              other:xPath="/Process/Item/Process.P_Candidate/Candidate/Person.P_Mail"              />
     <attr name="Candidate_Person_Mobile"            xs:type="string"   readonly="false"              other:xPath="/Process/Item/Process.P_Candidate/Candidate/Person.P_Mobile"            />
     <attr name="Candidate_Person_MobileMail"        xs:type="string"   readonly="false"              other:xPath="/Process/Item/Process.P_Candidate/Candidate/Person.P_MobileMail"        />
@@ -11,10 +11,10 @@
     <attr name="Client_Id"                      xs:type="integer"  readonly="false"              other:xPath="/Process/Item/Process.P_Client/Client/Client.P_Id"                      />
     <attr name="Close_ProcessCloseClose_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Process/Item/Process.P_Close/Option.P_ProcessCloseClose/Option.P_Id"   />
     <attr name="Close_ProcessCloseClose_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Process/Item/Process.P_Close/Option.P_ProcessCloseClose/Option.P_Name" />
-    <attr name="CloseReason"                                    xs:type="unknown"  readonly="false"              other:xPath="/Process/Item/Process.P_CloseReason"                                    />
+    <attr name="CloseReason"                                    xs:type="string"  readonly="false"              other:xPath="/Process/Item/Process.P_CloseReason"                                    />
     <attr name="Deleted"                                        xs:type="integer"  readonly="false"              other:xPath="/Process/Item/Process.P_Deleted"                                        />
     <attr name="ExpectedClosingDate"                            xs:type="date"     readonly="false"              other:xPath="/Process/Item/Process.P_ExpectedClosingDate"                            />
-    <attr name="ExpectedSalesAmount"                            xs:type="unknown"  readonly="false"              other:xPath="/Process/Item/Process.P_ExpectedSalesAmount"                            />
+    <attr name="ExpectedSalesAmount"                            xs:type="string"  readonly="false"              other:xPath="/Process/Item/Process.P_ExpectedSalesAmount"                            />
     <attr name="Id"                                             xs:type="integer"  readonly="false"              other:xPath="/Process/Item/Process.P_Id"                                             />
     <attr name="Job_Id"                               xs:type="integer"  readonly="false"              other:xPath="/Process/Item/Process.P_Job/Job/Job.P_Id"                               />
     <attr name="Owner_User_Id"                           xs:type="integer"  readonly="false"              other:xPath="/Process/Item/Process.P_Owner/User/User.P_Id"                           />
