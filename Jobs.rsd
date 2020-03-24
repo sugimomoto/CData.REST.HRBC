@@ -1,0 +1,175 @@
+<api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from XML. -->
+  <api:info title="Item" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+    <!-- You can modify the name, type, and column size here.   -->
+    <attr name="Area_Tokyo_Option_Id"                  xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Area/Option.P_Tokyo/Option.P_Id"                                                />
+    <attr name="Area_Tokyo_Option_Name"                xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Area/Option.P_Tokyo/Option.P_Name"                                              />
+    <attr name="AreaSummary"                                      xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_AreaSummary"                                                                    />
+    <attr name="Benefits"                                         xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_Benefits"                                                                       />
+    <attr name="CapitalText"                                      xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_CapitalText"                                                                    />
+    <attr name="Client_Id"                        xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Client/Client/Client.P_Id"                                                      />
+    <attr name="Deleted"                                          xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Deleted"                                                                        />
+    <attr name="EmploymentPeriod"                                 xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_EmploymentPeriod"                                                               />
+    <attr name="EmploymentType"                                   xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_EmploymentType"                                                                 />
+    <attr name="EstablishmentDateText"                            xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_EstablishmentDateText"                                                          />
+    <attr name="ExpectedAgeReason"                                xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_ExpectedAgeReason"                                                              />
+    <attr name="Holidays"                                         xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_Holidays"                                                                       />
+    <attr name="Id"                                               xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Id"                                                                             />
+    <attr name="Industry_Industry1_Option_Id"          xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Industry/Option.P_Industry1/Option.P_Id"                                        />
+    <attr name="Industry_Industry1_Option_Name"        xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Industry/Option.P_Industry1/Option.P_Name"                                      />
+    <attr name="Industry_Industry2_Option_Id"          xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Industry/Option.P_Industry2/Option.P_Id"                                        />
+    <attr name="Industry_Industry2_Option_Name"        xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Industry/Option.P_Industry2/Option.P_Name"                                      />
+    <attr name="IndustrySummary"                                  xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_IndustrySummary"                                                                />
+    <attr name="JobCategory_JobCategory13_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory13/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory13_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory13/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory14_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory14/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory14_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory14/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory15_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory15/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory15_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory15/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory16_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory16/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory16_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory16/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory17_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory17/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory17_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory17/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory18_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory18/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory18_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory18/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory19_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory19/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory19_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory19/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory20_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory20/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory20_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory20/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory21_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory21/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory21_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory21/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory22_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory22/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory22_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory22/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory23_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory23/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory23_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory23/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory24_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory24/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory24_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory24/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory25_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory25/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory25_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory25/Option.P_Name"                               />
+    <attr name="JobCategory_JobCategory26_Option_Id"   xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory26/Option.P_Id"                                 />
+    <attr name="JobCategory_JobCategory26_Option_Name" xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategory/Option.P_JobCategory26/Option.P_Name"                               />
+    <attr name="JobCategorySummary"                               xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_JobCategorySummary"                                                             />
+    <attr name="MaxSalary"                                        xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_MaxSalary"                                                                      />
+    <attr name="Memo"                                             xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Memo"                                                                           />
+    <attr name="MinSalary"                                        xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_MinSalary"                                                                      />
+    <attr name="Owner.User.User.P_Id"                             xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Owner/User/User.P_Id"                                                           />
+    <attr name="PayrollsText"                                     xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_PayrollsText"                                                                   />
+    <attr name="Phase_JobOpen_Option_Id"               xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Phase/Option.P_JobOpen/Option.P_Id"                                             />
+    <attr name="Phase_JobOpen_Option_Name"             xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Phase/Option.P_JobOpen/Option.P_Name"                                           />
+    <attr name="PhaseDate"                                        xs:type="datetime" readonly="false"              other:xPath="/Job/Item/Job.P_PhaseDate"                                                                      />
+    <attr name="PhaseMemo"                                        xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_PhaseMemo"                                                                      />
+    <attr name="Position"                                         xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Position"                                                                       />
+    <attr name="PubliclyTraded"                                   xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_PubliclyTraded"                                                                 />
+    <attr name="Publish_RealName_Option_Id"            xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_Publish/Option.P_RealName/Option.P_Id"                                          />
+    <attr name="Publish_RealName_Option_Name"          xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Publish/Option.P_RealName/Option.P_Name"                                        />
+    <attr name="Recruiter"                                        xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_Recruiter"                                        other:valueFormat="aggregate" />
+    <attr name="RegisteredBy_User_Id"                      xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_RegisteredBy/User/User.P_Id"                                                    />
+    <attr name="RegistrationDate"                                 xs:type="datetime" readonly="false"              other:xPath="/Job/Item/Job.P_RegistrationDate"                                                               />
+    <attr name="SalarySummary"                                    xs:type="string"   readonly="false"              other:xPath="/Job/Item/Job.P_SalarySummary"                                                                  />
+    <attr name="SalesAmountText"                                  xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_SalesAmountText"                                                                />
+    <attr name="UpdateDate"                                       xs:type="datetime" readonly="false"              other:xPath="/Job/Item/Job.P_UpdateDate"                                                                     />
+    <attr name="UpdatedBy_User_Id"                         xs:type="integer"  readonly="false"              other:xPath="/Job/Item/Job.P_UpdatedBy/User/User.P_Id"                                                       />
+    <attr name="WokingHours"                                      xs:type="unknown"  readonly="false"              other:xPath="/Job/Item/Job.P_WokingHours"                                                                    />
+  </api:info>
+
+
+  <api:set attr="_input.start" value="[rows@next | def('1') | split(',',1)]" />
+  <api:set attr="_input.count" value="100"/>
+  <api:set attr="_input.resource" value="job"/>
+  <api:set attr="_input.path" value="Job"/>
+  <api:set attr="_input.field" value="Job.P_Id,Job.P_Owner,Job.P_Client,Job.P_Recruiter,Job.P_RegistrationDate,Job.P_RegisteredBy,Job.P_UpdateDate,Job.P_UpdatedBy,Job.P_Phase,Job.P_PhaseDate,Job.P_PhaseMemo,Job.P_Position,Job.P_Publish,Job.P_JobCategorySummary,Job.P_JobCategory,Job.P_IndustrySummary,Job.P_Industry,Job.P_SalarySummary,Job.P_MinSalary,Job.P_MaxSalary,Job.P_AreaSummary,Job.P_Area,Job.P_PayrollsText,Job.P_Memo,Job.P_EmploymentPeriod,Job.P_WokingHours,Job.P_Holidays,Job.P_Benefits,Job.P_PubliclyTraded,Job.P_SalesAmountText,Job.P_EstablishmentDateText,Job.P_CapitalText,Job.P_EmploymentType,Job.P_ExpectedAgeReason,Job.P_Recruiter(Recruiter.P_Telephone,Recruiter.P_Fax,Recruiter.P_Mail,Recruiter.P_Mobile,Recruiter.P_MobileMail,Recruiter.P_Zipcode,Recruiter.P_Country,Recruiter.P_Prefecture,Recruiter.P_City,Recruiter.P_Street),Job.P_Deleted"/>
+  <api:set attr="_input.option" value=""/>
+
+  <!-- 2回目以降は実施しない -->
+  <api:null attr="rows@next">
+    <!-- OAuth Code Request-->
+    <api:set attr="OAuthCodeRequest.uri"  value="https://api-hrbc-jp.porterscloud.com/v1/oauth?app_id=[_connection.app_id]&redirect_url=[_connection.redirect_url]&response_type=code_direct" />
+    <api:set attr="OAuthCodeRequest.ElementMapPath#1" value="/Authentication/Code" />
+    <api:set attr="OAuthCodeRequest.ElementMapName#1" value="access_code" />
+    <api:set attr="OAuthCodeRequest.RepeatElement" value="/"/>
+    <api:set attr="OAuthCodeRequest.ignorecontenttype"  value="true" />
+    <api:set attr="OAuthCodeRequest.method"  value="get" />
+    <api:set attr="OAuthCodeRequest.EnablePaging"  value="true" />
+
+    <api:call op="xmlproviderGet" in="OAuthCodeRequest" out="OAuthCodeResponse">
+      <api:set attr="_input.OAuthCode" value="[OAuthCodeResponse.access_code]"/>
+    </api:call>
+    <!-- /OAuth Code Request-->
+
+    <!-- OAuth Token Request-->
+    <api:set attr="OAuthTokenRequest.uri"  value="https://api-hrbc-jp.porterscloud.com/v1/token" />
+    <api:set attr="OAuthTokenRequest.contenttype"  value="application/x-www-form-urlencoded" />
+    <api:set attr="OAuthTokenRequest.method"  value="post" />
+    <api:set attr="OAuthTokenRequest.ignorecontenttype"  value="true" />
+    <api:set attr="OAuthTokenRequest.encodepostdata"  value="false" />
+    <api:set attr="OAuthTokenRequest.data" value="app_id=[_connection.app_id]&secret=[_connection.secret]&grant_type=oauth_code&code=[_input.OAuthCode]" />
+
+    <api:set attr="OAuthTokenRequest.encodepostdata"  value="false" />
+
+    <api:set attr="OAuthTokenRequest.ElementMapPath#1" value="/Authentication/AccessToken" />
+    <api:set attr="OAuthTokenRequest.ElementMapName#1" value="access_token" />
+    <api:set attr="OAuthTokenRequest.RepeatElement" value="/"/>
+    <api:set attr="OAuthTokenRequest.EnablePaging"  value="true" />
+
+    <api:call op="xmlproviderGet" in="OAuthTokenRequest" out="OAuthTokenResponse">
+      <api:set attr="_input.OAuthToken" value="[OAuthTokenResponse.access_token]"/>
+    </api:call>
+    <!-- /OAuth Token Request-->
+  </api:null>
+
+  <!-- The GET method corresponds to SELECT. Here you can override the default processing of the SELECT statement. The results of processing are pushed to the schema's output. See SELECT Execution for more information. -->
+  <api:script method="GET">
+
+    <!-- Main Request-->
+    <api:set attr="MainRequest.DataModel" value="DOCUMENT" />
+    <api:set attr="MainRequest.PushAttributes" value="false" />
+
+    <api:set attr="MainRequest.uri" value="https://api-hrbc-jp.porterscloud.com/v1/[_input.resource]?partition=[_connection.partition]&count=[_input.count]&start=[_input.start]&field=[_input.field][_input.option]" />
+
+    <api:set attr="MainRequest.XPath" value="/[_input.path]/Item" />
+    <api:set attr="MainRequest.EnablePaging"  value="true" />
+
+    <api:null attr="_input.OAuthToken">
+      <api:set attr="_input.OAuthToken" value="[rows@next | split(',',2)]"/>
+    </api:null>
+
+    <api:set attr="MainRequest.Header:Name#1" value="X-porters-hrbc-oauth-token"/>
+    <api:set attr="MainRequest.Header:Value#1" value="[_input.OAuthToken]"/>    
+
+    <api:call op="xmlproviderGet" in="MainRequest" >
+      <api:set attr="rows@next" value="[_input.start | add([_input.count])],[_input.OAuthToken]" />
+      <api:push/>
+    </api:call>
+    <!-- Main Request-->
+
+  </api:script>
+
+  <!-- To add support for INSERTS please see the INSERT Execution page within the help for further information and examples. -->
+  <api:script method="POST">
+    <api:set attr="method" value="POST"/>
+    <api:call op="xmlproviderGet">
+      <api:throw code="500" desc="Inserts are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for UPDATES please see the UPDATE Execution page within the help for further information and examples. -->
+  <api:script method="MERGE">
+    <api:set attr="method" value="PUT"/>
+    <api:call op="xmlproviderGet">
+      <api:throw code="500" desc="Updates are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for DELETES please see the DELETE Execution page within the help for further information and examples. -->
+  <api:script method="DELETE">
+    <api:set attr="method" value="DELETE"/>
+    <api:call op="xmlproviderGet">
+      <api:throw code="500" desc="Deletes are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+</api:script>

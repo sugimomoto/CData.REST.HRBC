@@ -1,0 +1,126 @@
+<api:script xmlns:api="http://apiscript.com/ns?v1" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- See Column Definitions to specify column behavior and use XPaths to extract column values from XML. -->
+  <api:info title="Item" desc="Generated schema file." xmlns:other="http://apiscript.com/ns?v1">
+    <!-- You can modify the name, type, and column size here.   -->
+    <attr name="Department_Id"   xs:type="integer"  readonly="false"              other:xPath="/User/Item/User.P_Department/Department/Department.P_Id"   />
+    <attr name="Department_Name" xs:type="string"   readonly="false"              other:xPath="/User/Item/User.P_Department/Department/Department.P_Name" />
+    <attr name="EndDate"                                 xs:type="datetime"  readonly="false"              other:xPath="/User/Item/User.P_EndDate"                                 />
+    <attr name="Id"                                      xs:type="integer"  readonly="false"              other:xPath="/User/Item/User.P_Id"                                      />
+    <attr name="Language"                                xs:type="string"   readonly="false"              other:xPath="/User/Item/User.P_Language"                                />
+    <attr name="Mail"                                    xs:type="string"   readonly="false"              other:xPath="/User/Item/User.P_Mail"                                    />
+    <attr name="Mobile"                                  xs:type="string"  readonly="false"              other:xPath="/User/Item/User.P_Mobile"                                  />
+    <attr name="MobileMail"                              xs:type="string"  readonly="false"              other:xPath="/User/Item/User.P_MobileMail"                              />
+    <attr name="Name"                                    xs:type="string"   readonly="false"              other:xPath="/User/Item/User.P_Name"                                    />
+    <attr name="RegisteredBy_User_Id"             xs:type="integer"  readonly="false"              other:xPath="/User/Item/User.P_RegisteredBy/User/User.P_Id"             />
+    <attr name="RegisteredBy_User_Name"           xs:type="string"   readonly="false"              other:xPath="/User/Item/User.P_RegisteredBy/User/User.P_Name"           />
+    <attr name="RegistrationDate"                        xs:type="datetime" readonly="false"              other:xPath="/User/Item/User.P_RegistrationDate"                        />
+    <attr name="StartDate"                               xs:type="date"     readonly="false"              other:xPath="/User/Item/User.P_StartDate"                               />
+    <attr name="Telephone"                               xs:type="integer"  readonly="false"              other:xPath="/User/Item/User.P_Telephone"                               />
+    <attr name="TimeZone"                                xs:type="string"   readonly="false"              other:xPath="/User/Item/User.P_TimeZone"                                />
+    <attr name="Type"                                    xs:type="integer"  readonly="false"              other:xPath="/User/Item/User.P_Type"                                    />
+    <attr name="UpdateDate"                              xs:type="datetime" readonly="false"              other:xPath="/User/Item/User.P_UpdateDate"                              />
+    <attr name="UpdatedBy_User_Id"                xs:type="integer"  readonly="false"              other:xPath="/User/Item/User.P_UpdatedBy/User/User.P_Id"                />
+    <attr name="UpdatedBy_User_Name"              xs:type="string"   readonly="false"              other:xPath="/User/Item/User.P_UpdatedBy/User/User.P_Name"              />
+    <attr name="UserName"                                xs:type="string"   readonly="false"              other:xPath="/User/Item/User.P_UserName"                                />
+  </api:info>
+
+  <api:set attr="_input.start" value="[rows@next | def('1') | split(',',1)]" />
+  <api:set attr="_input.count" value="100"/>
+  <api:set attr="_input.resource" value="user"/>
+  <api:set attr="_input.path" value="User"/>
+  <api:set attr="_input.field" value="User.P_Id,User.P_Type,User.P_Name,User.P_Mail,User.P_Department,User.P_Telephone,User.P_Mobile,User.P_MobileMail,User.P_UserName,User.P_TimeZone,User.P_Language,User.P_StartDate,User.P_EndDate,User.P_RegistrationDate,User.P_RegisteredBy,User.P_UpdateDate,User.P_UpdatedBy"/>
+  <api:set attr="_input.option" value="&request_type=1&user_type=-1"/>
+
+  <!-- 2回目以降は実施しない -->
+  <api:null attr="rows@next">
+    <!-- OAuth Code Request-->
+    <api:set attr="OAuthCodeRequest.uri"  value="https://api-hrbc-jp.porterscloud.com/v1/oauth?app_id=[_connection.app_id]&redirect_url=[_connection.redirect_url]&response_type=code_direct" />
+    <api:set attr="OAuthCodeRequest.ElementMapPath#1" value="/Authentication/Code" />
+    <api:set attr="OAuthCodeRequest.ElementMapName#1" value="access_code" />
+    <api:set attr="OAuthCodeRequest.RepeatElement" value="/"/>
+    <api:set attr="OAuthCodeRequest.ignorecontenttype"  value="true" />
+    <api:set attr="OAuthCodeRequest.method"  value="get" />
+    <api:set attr="OAuthCodeRequest.EnablePaging"  value="true" />
+
+    <api:call op="xmlproviderGet" in="OAuthCodeRequest" out="OAuthCodeResponse">
+      <api:set attr="_input.OAuthCode" value="[OAuthCodeResponse.access_code]"/>
+    </api:call>
+    <!-- /OAuth Code Request-->
+
+    <!-- OAuth Token Request-->
+    <api:set attr="OAuthTokenRequest.uri"  value="https://api-hrbc-jp.porterscloud.com/v1/token" />
+    <api:set attr="OAuthTokenRequest.contenttype"  value="application/x-www-form-urlencoded" />
+    <api:set attr="OAuthTokenRequest.method"  value="post" />
+    <api:set attr="OAuthTokenRequest.ignorecontenttype"  value="true" />
+    <api:set attr="OAuthTokenRequest.encodepostdata"  value="false" />
+    <api:set attr="OAuthTokenRequest.data" value="app_id=[_connection.app_id]&secret=[_connection.secret]&grant_type=oauth_code&code=[_input.OAuthCode]" />
+
+    <api:set attr="OAuthTokenRequest.encodepostdata"  value="false" />
+
+    <api:set attr="OAuthTokenRequest.ElementMapPath#1" value="/Authentication/AccessToken" />
+    <api:set attr="OAuthTokenRequest.ElementMapName#1" value="access_token" />
+    <api:set attr="OAuthTokenRequest.RepeatElement" value="/"/>
+    <api:set attr="OAuthTokenRequest.EnablePaging"  value="true" />
+
+    <api:call op="xmlproviderGet" in="OAuthTokenRequest" out="OAuthTokenResponse">
+      <api:set attr="_input.OAuthToken" value="[OAuthTokenResponse.access_token]"/>
+    </api:call>
+    <!-- /OAuth Token Request-->
+  </api:null>
+
+  <!-- The GET method corresponds to SELECT. Here you can override the default processing of the SELECT statement. The results of processing are pushed to the schema's output. See SELECT Execution for more information. -->
+  <api:script method="GET">
+
+    <!-- Main Request-->
+    <api:set attr="MainRequest.DataModel" value="DOCUMENT" />
+    <api:set attr="MainRequest.PushAttributes" value="false" />
+
+    <api:set attr="MainRequest.uri" value="https://api-hrbc-jp.porterscloud.com/v1/[_input.resource]?partition=[_connection.partition]&count=[_input.count]&start=[_input.start]&field=[_input.field][_input.option]" />
+
+    <api:set attr="MainRequest.XPath" value="/[_input.path]/Item" />
+    <api:set attr="MainRequest.EnablePaging"  value="true" />
+
+    <api:null attr="_input.OAuthToken">
+      <api:set attr="_input.OAuthToken" value="[rows@next | split(',',2)]"/>
+    </api:null>
+
+    <api:set attr="MainRequest.Header:Name#1" value="X-porters-hrbc-oauth-token"/>
+    <api:set attr="MainRequest.Header:Value#1" value="[_input.OAuthToken]"/>    
+
+    <api:call op="xmlproviderGet" in="MainRequest" >
+      <api:set attr="rows@next" value="[_input.start | add([_input.count])],[_input.OAuthToken]" />
+      <api:push/>
+    </api:call>
+    <!-- Main Request-->
+
+  </api:script>
+
+  <!-- To add support for INSERTS please see the INSERT Execution page within the help for further information and examples. -->
+  <api:script method="POST">
+    <api:set attr="method" value="POST"/>
+    <api:call op="xmlproviderGet">
+      <api:throw code="500" desc="Inserts are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for UPDATES please see the UPDATE Execution page within the help for further information and examples. -->
+  <api:script method="MERGE">
+    <api:set attr="method" value="PUT"/>
+    <api:call op="xmlproviderGet">
+      <api:throw code="500" desc="Updates are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+  <!-- To add support for DELETES please see the DELETE Execution page within the help for further information and examples. -->
+  <api:script method="DELETE">
+    <api:set attr="method" value="DELETE"/>
+    <api:call op="xmlproviderGet">
+      <api:throw code="500" desc="Deletes are not currently supported."/>
+      <api:push/>
+    </api:call>
+  </api:script>
+
+</api:script>
