@@ -46,7 +46,7 @@
     <api:set attr="OAuthCodeRequest.ElementMapName#1" value="access_code" />
     <api:set attr="OAuthCodeRequest.RepeatElement" value="/"/>
     <api:set attr="OAuthCodeRequest.ignorecontenttype"  value="true" />
-    <api:set attr="OAuthCodeRequest.method"  value="get" />
+    <api:set attr="OAuthCodeRequest.method"  value="GET" />
     <api:set attr="OAuthCodeRequest.EnablePaging"  value="true" />
 
     <api:call op="xmlproviderGet" in="OAuthCodeRequest" out="OAuthCodeResponse">
@@ -57,7 +57,7 @@
     <!-- OAuth Token Request-->
     <api:set attr="OAuthTokenRequest.uri"  value="https://api-hrbc-jp.porterscloud.com/v1/token" />
     <api:set attr="OAuthTokenRequest.contenttype"  value="application/x-www-form-urlencoded" />
-    <api:set attr="OAuthTokenRequest.method"  value="post" />
+    <api:set attr="OAuthTokenRequest.method"  value="POST" />
     <api:set attr="OAuthTokenRequest.ignorecontenttype"  value="true" />
     <api:set attr="OAuthTokenRequest.encodepostdata"  value="false" />
     <api:set attr="OAuthTokenRequest.data" value="app_id=[_connection.app_id]&secret=[_connection.secret]&grant_type=oauth_code&code=[_input.OAuthCode]" />
@@ -81,6 +81,7 @@
     <!-- Main Request-->
     <api:set attr="MainRequest.DataModel" value="DOCUMENT" />
     <api:set attr="MainRequest.PushAttributes" value="false" />
+    <api:set attr="MainRequest.method"  value="GET" />
 
     <api:set attr="MainRequest.uri" value="https://api-hrbc-jp.porterscloud.com/v1/[_input.resource]?partition=[_connection.partition]&count=[_input.count]&start=[_input.start]&field=[_input.field][_input.option]" />
 
